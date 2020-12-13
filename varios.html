@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset= "UTF-8">
+        <title>
+        Retos Día 8
+        </title>
+    </head>
+    <body>
+
+        <script>
+       
+            /*Reto 1 */
+
+            let suma = (n1 = 0, n2 = 0) => {
+                
+                if (n1 == 0 && n2 == 0) {
+                    
+                    document.write("No hay parámetros");
+                } else {
+                
+                    document.write (n1 + n2);
+                }
+            }
+
+            /*Reto 2 */
+
+            let multiply = (x,y) => {x*y}
+
+            /*Reto 3 */
+
+            let sumaelementosarray = (a) => {
+                
+                if (Array.isArray(a)) {
+                    let sumanumeros = 0  
+                    var i = 0
+                    while (i<a.length) {
+                       sumanumeros += a[i]
+                       i++
+                    }
+                    document.write(sumanumeros+"<br>");
+
+                } else if (!Array.isArray(a)) {
+                    
+                    document.write("No has introducido un array como parámetro de entrada");
+                } else if (!a) {
+                    
+                    document.write(0);
+                }
+                    
+            }
+
+            /*Reto 4 */
+
+
+            
+
+            let cifrar = (texto) => {
+
+                let nuevotexto = ""
+
+                for (var i = 0; i < texto.length; i++) {
+
+                    nuevotexto += texto.charCodeAt(i)+ " ";
+                }
+
+                document.write(nuevotexto);
+
+            }
+
+            cifrar ("Hola ¿Qué tal?")
+
+
+   
+        </script>
+
+    </body>
+</html>

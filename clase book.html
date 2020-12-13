@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset= "UTF-8">
+        <title>
+        Reto 4
+        </title>
+    </head>
+    <body>
+
+        <script>
+
+            class Book 
+            {
+                public name: string;
+                public age: number;
+                private address: string
+
+                constructor (name: string, age: number, address: string) {
+                    this.name = name;
+                    this.age = age;
+                    this.address = address;
+                }
+                
+
+                printName (name) {
+
+                    console.log (this.name);
+                }
+
+
+                yearOfBirth (currentYear) : number 
+                {
+                return (currentYear- this.age);
+                }
+
+                get Address():
+                {
+                    return this.address
+                }
+                set Address (newAddress)
+                {
+                    this.address = newAddress
+                }
+                
+
+            }
+
+        </script>
+
+    </body>
+</html>
